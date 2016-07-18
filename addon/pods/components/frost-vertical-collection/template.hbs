@@ -1,0 +1,18 @@
+{{#each _content key='@index' as |item index|}}
+  {{#frost-vertical-item
+    itemTagName=itemTagName
+    classNames=itemClassNames
+    defaultHeight=defaultHeight
+    alwaysUseDefaultHeight=alwaysUseDefaultHeight
+    content=item
+    index=index
+    register=(action register)
+    unregister=(action unregister)
+  }}
+    {{#if shouldRenderList}}
+      {{yield item index}}
+    {{/if}}
+  {{/frost-vertical-item}}
+{{else}}
+  {{yield to="inverse"}}
+{{/each}}

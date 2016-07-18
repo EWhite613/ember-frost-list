@@ -12,8 +12,8 @@ export default Ember.Component.extend({
 
   isSelected: Ember.computed('model.isSelected', function () {
     let modelIsSelect = this.get('model.isSelected')
-    modelIsSelect ? $(this.get('element')).parent().addClass('is-selected')
-    : $(this.get('element')).parent().removeClass('is-selected')
+    // modelIsSelect ? $(this.get('element')).parent().addClass('is-selected')
+    // : $(this.get('element')).parent().removeClass('is-selected')
     return modelIsSelect
   }),
   onclick: Ember.on('click', function (event) {
