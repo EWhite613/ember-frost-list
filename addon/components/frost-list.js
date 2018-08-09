@@ -120,7 +120,7 @@ export default Component.extend({
 
       // Smoke and mirrors options
       alwaysUseDefaultHeight: false,
-      bufferSize: 10,
+      bufferSize: 0.25,
 
       // Pagination options
       useVerticalCollectionForPagination: false,
